@@ -1,0 +1,22 @@
+{
+	"name": "d1-worker-app",
+	"private": true,
+	"scripts": {
+		"check:type": "tsc",
+		"start": "wrangler dev --local",
+		"test:ci": "pnpm wrangler d1 execute UPDATE_THIS_FOR_REMOTE_USE --local --file hash_errors.sql",
+		"test:watch": "vitest",
+		"type:tests": "tsc -p ./tests/tsconfig.json"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-tsconfig": "workspace:*",
+		"@cloudflare/workers-types": "^4.20250408.0",
+		"typescript": "catalog:default",
+		"undici": "catalog:default",
+		"vitest": "catalog:default",
+		"wrangler": "workspace:*"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}
