@@ -1,5 +1,5 @@
 {
-	"name": "d1-worker-app",
+	"name": "d1-execute-hash-error",
 	"private": true,
 	"scripts": {
 		"check:type": "tsc",
